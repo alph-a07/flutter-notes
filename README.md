@@ -1,9 +1,9 @@
 # Contents
-- <a href="https://github.com/alph-a07/Flutter-Notes/README.md#introduction-to-dart">Introduction to Dart</a>
-- <a href="https://github.com/alph-a07/Flutter-Notes/README.md#dart-functions">Dart functions</a>
-- <a href="https://github.com/alph-a07/Flutter-Notes/README.md#oops-in-dart">OOPs in Dart</a>
-- <a href="https://github.com/alph-a07/Flutter-Notes/README.md#introduction-to-dart">Introduction to Dart</a>
-- <a href="https://github.com/alph-a07/Flutter-Notes/README.md#introduction-to-dart">Introduction to Dart</a>
+- <a href="https://github.com/alph-a07/Flutter-Notes/blob/main/README.md#introduction-to-dart">Introduction to Dart</a>
+- <a href="https://github.com/alph-a07/Flutter-Notes/blob/main/README.md#dart-functions">Dart functions</a>
+- <a href="https://github.com/alph-a07/Flutter-Notes/blob/main/README.md#oops-in-dart">OOPs in Dart</a>
+- <a href="https://github.com/alph-a07/Flutter-Notes/blob/main/README.md#introduction-to-dart">Introduction to Dart</a>
+- <a href="https://github.com/alph-a07/Flutter-Notes/blob/main/README.md#introduction-to-dart">Introduction to Dart</a>
 
 # Introduction to Dart
 
