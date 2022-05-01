@@ -4,10 +4,12 @@
 - <a href="https://github.com/alph-a07/Flutter-Notes/blob/main/README.md#oops-in-dart">OOPs in Dart</a>
 
 # Flutter, let's go🚀
+- App Icon
 
 - [Material Library](https://github.com/alph-a07/Flutter-Notes/blob/main/README.md#material-library)
 	- [Scaffold Class](https://github.com/alph-a07/Flutter-Notes/blob/main/README.md#scaffold-class)
 	- [Image Class](https://github.com/alph-a07/Flutter-Notes/blob/main/README.md#image-class)
+	- [App Icon](https://github.com/alph-a07/Flutter-Notes/blob/main/README.md#ap-icon)
 
 # Introduction to Dart
 
@@ -317,6 +319,15 @@ geek2.output1();
 **NOTE:**<br>
 - Child classes inherit all properties and methods except constructors of the parent class.
 - Like Java, Dart also doesn’t support multiple inheritance.
+
+# App Icon
+- Icon generator: https://appicon.co/ 
+
+### IOS Icons
+- Replace `ios/Runner/Assets.xcassets` with the same one got from the icon generator.
+
+### Android Icons
+- Replace mipmap files in `app/src/main/res` with the same ones got from the icon generator.
 
 # Material Library
 
