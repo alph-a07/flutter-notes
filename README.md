@@ -7,6 +7,7 @@
 
 - [Material Library](https://github.com/alph-a07/Flutter-Notes/blob/main/README.md#material-library)
 	- [Scaffold Class](https://github.com/alph-a07/Flutter-Notes/blob/main/README.md#scaffold-class)
+	- [Image Class](https://github.com/alph-a07/Flutter-Notes/blob/main/README.md#image-class)
 
 # Introduction to Dart
 
@@ -323,7 +324,24 @@ geek2.output1();
 - Material is a design system created by Google to help teams build high-quality digital experiences for Android, iOS, Flutter, and the web.
 
 ## Scaffold Class
-`null safety`
 
 - Reference: https://api.flutter.dev/flutter/material/Scaffold-class.html
 -  By default the scaffold's body is resized to make room for the keyboard. To prevent the resize set [`resizeToAvoidBottomInset`](https://api.flutter.dev/flutter/material/Scaffold/resizeToAvoidBottomInset.html) to false.
+
+## Image Class
+
+- Reference: https://api.flutter.dev/flutter/widgets/Image-class.html
+
+#### Adding a local image
+
+- Create a directory named images in project folder.
+- Head to the `pubspec.yaml` configuration file.
+```yaml
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - images/
+```
+YAML(YAML Ain't Markup Language) is indentation(two spaces) based language.
+- Add images path to use them in the project or just write `- images/` to add all images.
+
+
