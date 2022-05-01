@@ -320,8 +320,8 @@ geek2.output1();
 - Like Java, Dart also doesn’t support multiple inheritance.
 
 # App Icon
-- Icon generator: https://appicon.co/
-![image](https://user-images.githubusercontent.com/83648189/166150250-b68130c6-f31c-4250-b69b-535a75b3e8e1.png)
+- Icon generator: https://appicon.co/ <br>
+![image](https://user-images.githubusercontent.com/83648189/166150280-fc24aead-6f79-4908-b304-4995f3528813.png)
 
 
 ### IOS Icons
