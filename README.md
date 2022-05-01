@@ -1,9 +1,11 @@
-# Contents
+# Basics of Dart
 - <a href="https://github.com/alph-a07/Flutter-Notes/blob/main/README.md#introduction-to-dart">Introduction to Dart</a>
 - <a href="https://github.com/alph-a07/Flutter-Notes/blob/main/README.md#dart-functions">Dart functions</a>
 - <a href="https://github.com/alph-a07/Flutter-Notes/blob/main/README.md#oops-in-dart">OOPs in Dart</a>
-- <a href="https://github.com/alph-a07/Flutter-Notes/blob/main/README.md#introduction-to-dart">Introduction to Dart</a>
-- <a href="https://github.com/alph-a07/Flutter-Notes/blob/main/README.md#introduction-to-dart">Introduction to Dart</a>
+
+# Flutter, let's go🚀
+
+- [Material Library]()
 
 # Introduction to Dart
 
@@ -314,3 +316,13 @@ geek2.output1();
 - Child classes inherit all properties and methods except constructors of the parent class.
 - Like Java, Dart also doesn’t support multiple inheritance.
 
+# Material Library
+
+- Reference: https://api.flutter.dev/flutter/material/material-library.html
+- Material is a design system created by Google to help teams build high-quality digital experiences for Android, iOS, Flutter, and the web.
+
+## Scaffold Class
+`null safety`
+
+- Reference: https://api.flutter.dev/flutter/material/Scaffold-class.html
+-  By default the scaffold's body is resized to make room for the keyboard. To prevent the resize set [`resizeToAvoidBottomInset`](https://api.flutter.dev/flutter/material/Scaffold/resizeToAvoidBottomInset.html) to false.
