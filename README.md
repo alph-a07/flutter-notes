@@ -6,7 +6,7 @@
 # Flutter, let's go🚀
 
 - [Material Library](https://github.com/alph-a07/Flutter-Notes/blob/main/README.md#material-library)
-- - [Scaffold Class](https://github.com/alph-a07/Flutter-Notes/blob/main/README.md#scaffold-class)
+	- [Scaffold Class](https://github.com/alph-a07/Flutter-Notes/blob/main/README.md#scaffold-class)
 
 # Introduction to Dart
 
