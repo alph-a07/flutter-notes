@@ -4,12 +4,11 @@
 - <a href="https://github.com/alph-a07/Flutter-Notes/blob/main/README.md#oops-in-dart">OOPs in Dart</a>
 
 # Flutter, let's go🚀
-- App Icon
+- App Icon(https://github.com/alph-a07/Flutter-Notes/blob/main/README.md#ap-icon)
 
 - [Material Library](https://github.com/alph-a07/Flutter-Notes/blob/main/README.md#material-library)
 	- [Scaffold Class](https://github.com/alph-a07/Flutter-Notes/blob/main/README.md#scaffold-class)
 	- [Image Class](https://github.com/alph-a07/Flutter-Notes/blob/main/README.md#image-class)
-	- [App Icon](https://github.com/alph-a07/Flutter-Notes/blob/main/README.md#ap-icon)
 
 # Introduction to Dart
 
