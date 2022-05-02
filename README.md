@@ -390,7 +390,7 @@ void main() {
 }
 ```
 - Hot relaod works by detecting the changes made to our code and by only building those changes again, that's why it takes much less time than full build.
-- In order to detect changes and build them out app must extend either a [`stateless`](https://github.com/alph-a07/Flutter-Notes/blob/main/README.md#stateless-widgets) or a [`stateful`](https://github.com/alph-a07/Flutter-Notes/edit/main/README.md#stateful-widgets) widget.
+- In order to detect changes and build them out app must extend either a [`stateless`](https://github.com/alph-a07/Flutter-Notes/blob/main/README.md#stateless-widgets) or a [`stateful`](https://github.com/alph-a07/Flutter-Notes/blob/main/README.md#stateful-widgets) widget.
 
 ```dart
 void main() {
