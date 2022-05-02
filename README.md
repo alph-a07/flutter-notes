@@ -5,8 +5,8 @@
 
 # Flutter, let's go🚀
 - [App Icon](https://github.com/alph-a07/Flutter-Notes/blob/main/README.md#app-icon)
-- [State of the app]((https://github.com/alph-a07/Flutter-Notes/blob/main/README.md#state-of-the-app))
-- [Hot Relaod](https://github.com/alph-a07/Flutter-Notes/blob/main/README.md#hot-reload)
+- [State of the app](https://github.com/alph-a07/Flutter-Notes/blob/main/README.md#state-of-an-app)
+- [Hot Relaod](https://github.com/alph-a07/Flutter-Notes/blob/main/README.md#hot-relaod)
 - [Material Library](https://github.com/alph-a07/Flutter-Notes/blob/main/README.md#material-library)
 	- [Scaffold Class](https://github.com/alph-a07/Flutter-Notes/blob/main/README.md#scaffold-class)
 	- [Image Class](https://github.com/alph-a07/Flutter-Notes/blob/main/README.md#image-class)
