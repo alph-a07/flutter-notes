@@ -5,7 +5,8 @@
 
 # Flutter, let's go🚀
 - [App Icon](https://github.com/alph-a07/Flutter-Notes/blob/main/README.md#app-icon)
-
+- [State of the app]((https://github.com/alph-a07/Flutter-Notes/blob/main/README.md#state-of-the-app))
+- [Hot Relaod](https://github.com/alph-a07/Flutter-Notes/blob/main/README.md#hot-reload)
 - [Material Library](https://github.com/alph-a07/Flutter-Notes/blob/main/README.md#material-library)
 	- [Scaffold Class](https://github.com/alph-a07/Flutter-Notes/blob/main/README.md#scaffold-class)
 	- [Image Class](https://github.com/alph-a07/Flutter-Notes/blob/main/README.md#image-class)
@@ -323,12 +324,92 @@ geek2.output1();
 - Icon generator: https://appicon.co/ <br><br>
 ![image](https://user-images.githubusercontent.com/83648189/166150280-fc24aead-6f79-4908-b304-4995f3528813.png)
 
-
 ### IOS Icons
 - Replace `ios/Runner/Assets.xcassets` with the same one got from the icon generator.
 
 ### Android Icons
 - Replace mipmap files in `app/src/main/res` with the same ones got from the icon generator.
+
+# State of an App
+
+- The State is the information(buttons, text fonts, icons, animations, etc) that can be read synchronously when the widget is built and might change during the lifetime of the widget.
+
+### Stateless widgets
+- The widgets whose state can not be altered once they are built are called stateless widgets.
+- Ex: Text, RaisedButton, IconButtons.
+
+```dart
+import 'package:flutter/material.dart';
+
+void main() => runApp(MyApp());
+
+class MyApp extends StatelessWidget {
+@override
+	Widget build(BuildContext context) {
+		return Container();
+	}
+}
+```
+### Stateful widgets
+- The widgets whose state can be altered once they are built are called stateful Widgets.
+- Ex: CheckBox, RadioButton, Form, TextField.
+
+```dart
+import 'package:flutter/material.dart';
+ 
+void main() => runApp(MyApp());
+ 
+class MyApp extends StatefulWidget {
+  @override
+  _MyAppState createState() => _MyAppState();
+}
+ 
+class _MyAppState extends State<MyApp> {
+  @override
+  Widget build(BuildContext context) {
+    return Container();
+  }
+}
+```
+
+**Summary:** Stateless widget is useful when the part of the user interface you are describing does not depend on anything other than the configuration information and the BuildContext whereas a Stateful widget is useful when the part of the user interface you are describing can change dynamically.
+
+# Hot Relaod
+
+- Hot relaod does not work with a direct app in the main class.
+```dart
+void main() {
+	runApp(
+		MaterialApp(
+			home: Scaffold(
+				backgroundColor: Colors.red,
+				body: Container(),
+			), // Scaffold
+		). // MaterialApp
+	);
+}
+```
+- Hot relaod works by detecting the changes made to our code and by only building those changes again, that's why it takes much less time than full build.
+- In order to detect changes and build them out app must extend either a [`stateless`](https://github.com/alph-a07/Flutter-Notes/blob/main/README.md#stateless-widgets) or a [`stateful`](https://github.com/alph-a07/Flutter-Notes/edit/main/README.md#stateful-widgets) widget.
+
+```dart
+void main() {
+	runApp(MyApp());
+}
+class MyApp extends StatelessWidget {
+	@override
+	Widget build(Build Context context) {
+		return MaterialApp(
+			home: Scaffold(
+				backgroundColor: Colors.red,
+				body: Container(),
+			)1 // scaffOld
+		); // MaterialApp
+	}
+}
+```
+
+**Note:** `Hot reload` affects only changed part of the app and reflects it to the running app, while `Hot restart` resets the running app's state along with changes made.
 
 # Material Library
 
