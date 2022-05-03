@@ -25,6 +25,8 @@
 	- [Padding](https://api.flutter.dev/flutter/widgets/Padding-class.html): To apply padding to a widget whose parent does not have a `padding property`
 - [Adding custom fonts](https://github.com/alph-a07/Flutter-Notes/blob/main/README.md#adding-custom-fonts)
 
+- [Business Card UI](https://github.com/alph-a07/Flutter-Notes/blob/main/README.md#business-card-ui)
+
 # Introduction to Dart
 
 - Object-oriented language
@@ -466,3 +468,155 @@ YAML(YAML Ain't Markup Language) is indentation(two spaces) based language.
 ```
 - Now the fonts can be accessed by the font-family `FONT_FAMILY` to style the text.
 
+# Business Card UI
+
+Dart Code:
+```dart
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  MyApp({Key? key}) : super(key: key);
+
+  // This widget is the root of your application.
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        backgroundColor: Colors.black12,
+        body: SafeArea(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              CircleAvatar(
+                radius: 60,
+                foregroundImage: AssetImage('images/profile-pic.png'),
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              Text(
+                'Jeel Patel',
+                style: TextStyle(
+                    fontSize: 35,
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                    fontFamily: 'NameFont'),
+              ),
+              SizedBox(
+                height: 5,
+              ),
+              Text(
+                'App Developer',
+                style: TextStyle(
+                    fontFamily: 'WorkFont',
+                    color: Colors.white,
+                    fontSize: 15,
+                    letterSpacing: 2.5),
+              ),
+              SizedBox(
+                height: 20,
+                width: 150,
+                child: Divider(
+                  color: Colors.white70,
+                ),
+              ),
+              Card(
+                color: Colors.white,
+                margin: EdgeInsets.symmetric(vertical: 20, horizontal: 30),
+                child: Padding(
+                  padding: const EdgeInsets.all(10),
+                  child: Row(
+                    children: [
+                      Icon(
+                        Icons.phone,
+                        color: Colors.black,
+                      ),
+                      SizedBox(
+                        width: 15,
+                      ),
+                      Text(
+                        '+91 1234567890',
+                        style: TextStyle(color: Colors.black, fontSize: 15),
+                      )
+                    ],
+                  ),
+                ),
+              ),
+              Card(
+                color: Colors.white,
+                margin: EdgeInsets.symmetric(horizontal: 30),
+                child: Padding(
+                  padding: const EdgeInsets.all(10),
+                  child: Row(
+                    children: [
+                      Icon(
+                        Icons.email,
+                        color: Colors.black,
+                      ),
+                      SizedBox(
+                        width: 15,
+                      ),
+                      Text(
+                        'itsjeel01@gmail.com',
+                        style: TextStyle(color: Colors.black, fontSize: 15),
+                      )
+                    ],
+                  ),
+                ),
+              )
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+```
+pubspec.yaml:
+```yaml
+name: bussiness_card
+description: A new Flutter project.
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.16.2 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^1.0.0
+
+flutter:
+
+  uses-material-design: true
+
+  assets:
+    - images/
+
+  fonts:
+  - family: NameFont
+    fonts:
+      - asset: fonts/MySoul-Regular.ttf
+
+  - family: WorkFont
+    fonts:
+      - asset: fonts/AlegreyaSansSC-Light.ttf
+```
+<span>
+<img src="https://user-images.githubusercontent.com/83648189/166435333-5834ae75-d94a-4ef4-8f03-b2024e7aa0c3.jpg" width="270" height="600">
+<img src="https://user-images.githubusercontent.com/83648189/166436617-9b960f3c-7a1b-411d-968e-f1832a8939f8.png" width="600" height="600">
+</span>
