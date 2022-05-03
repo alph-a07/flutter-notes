@@ -10,6 +10,20 @@
 - [Material Library](https://github.com/alph-a07/Flutter-Notes/blob/main/README.md#material-library)
 	- [Scaffold Class](https://github.com/alph-a07/Flutter-Notes/blob/main/README.md#scaffold-class)
 	- [Image Class](https://github.com/alph-a07/Flutter-Notes/blob/main/README.md#image-class)
+	- [Card Class](https://api.flutter.dev/flutter/material/Card-class.html) - Rounded elevated look
+	- [ListTile Class](https://api.flutter.dev/flutter/material/ListTile-class.html) - An icon with a text
+	- [CircleAvatar Class](https://api.flutter.dev/flutter/material/CircleAvatar-class.html)
+	- [Divider Class](https://api.flutter.dev/flutter/material/Divider-class.html)
+	
+- [Widgets](https://docs.flutter.dev/development/ui/widgets)
+	- [Container](https://api.flutter.dev/flutter/widgets/Container-class.html)
+	- [Column](https://api.flutter.dev/flutter/widgets/Column-class.html)
+	- [Row](https://api.flutter.dev/flutter/widgets/Row-class.html)
+	- [SizedBox](https://api.flutter.dev/flutter/widgets/SizedBox-class.html)
+	- [Icon](https://api.flutter.dev/flutter/widgets/Icon-class.html) - [Searchable icons list](https://www.materialpalette.com/icons)
+		
+	- [Padding](https://api.flutter.dev/flutter/widgets/Padding-class.html): To apply padding to a widget whose parent does not have a `padding property`
+- [Adding custom fonts](https://github.com/alph-a07/Flutter-Notes/blob/main/README.md#adding-custom-fonts)
 
 # Introduction to Dart
 
@@ -437,4 +451,18 @@ class MyApp extends StatelessWidget {
 YAML(YAML Ain't Markup Language) is indentation(two spaces) based language.
 - Add images path to use them in the project or just write `- images/` to add all images.
 
+# Adding custom fonts
+
+- Download .ttf files from https://fonts.google.com/
+- Add the fonts you want to use in a new directory named `fonts`
+- Now in the `pubspec.yaml` file, uncomment the code for adding fonts
+```yaml
+  fonts:
+  - family: FONT_FAMILY
+    fonts:
+      - asset: fonts/FONT_REGULAR.ttf
+      - asset: fonts/FONT_LIGHT.ttf
+      # add as per your need
+```
+- Now the fonts can be accessed by the font-family `FONT_FAMILY` to style the text.
 
