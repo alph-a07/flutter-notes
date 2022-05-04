@@ -15,14 +15,15 @@
 	- [CircleAvatar Class](https://api.flutter.dev/flutter/material/CircleAvatar-class.html)
 	- [Divider Class](https://api.flutter.dev/flutter/material/Divider-class.html)
 	
-- [Widgets](https://docs.flutter.dev/development/ui/widgets)
+- [Widgets](https://github.com/alph-a07/Flutter-Notes/blob/main/README.md#widgets)
 	- [Container](https://api.flutter.dev/flutter/widgets/Container-class.html)
 	- [Column](https://api.flutter.dev/flutter/widgets/Column-class.html)
 	- [Row](https://api.flutter.dev/flutter/widgets/Row-class.html)
 	- [SizedBox](https://api.flutter.dev/flutter/widgets/SizedBox-class.html)
 	- [Icon](https://api.flutter.dev/flutter/widgets/Icon-class.html) - [Searchable icons list](https://www.materialpalette.com/icons)
-		
+	- [Expanded Widget](https://github.com/alph-a07/Flutter-Notes/blob/main/README.md#expanded-widget)		
 	- [Padding](https://api.flutter.dev/flutter/widgets/Padding-class.html): To apply padding to a widget whose parent does not have a `padding property`
+	- 
 - [Adding custom fonts](https://github.com/alph-a07/Flutter-Notes/blob/main/README.md#adding-custom-fonts)
 
 - [Business Card UI](https://github.com/alph-a07/Flutter-Notes/blob/main/README.md#business-card-ui)
@@ -452,6 +453,15 @@ class MyApp extends StatelessWidget {
 ```
 YAML(YAML Ain't Markup Language) is indentation(two spaces) based language.
 - Add images path to use them in the project or just write `- images/` to add all images.
+
+# Widgets
+- Reference: https://api.flutter.dev/flutter/widgets/widgets-library.html
+
+### Expanded Widget
+- Reference: https://api.flutter.dev/flutter/widgets/Expanded-class.html
+- A child of expanded class fills full space available in the screen.
+- **Flex:** The child will fill `Total free space/flex`.
+- Works like weights in `Linear layouts` in android development.
 
 # Adding custom fonts
 
