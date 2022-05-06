@@ -426,7 +426,7 @@ class MyApp extends StatelessWidget {
 }
 ```
 
-**Note:** `Hot reload` affects only changed part of the app and reflects it to the running app, while `Hot restart` resets the running app's state along with changes made.
+**Note:** `Hot reload` affects only changed part of the app(inside build method only) and reflects it to the running app, while `Hot restart` resets the running app's state along with changes made.
 
 # Material Library
 
