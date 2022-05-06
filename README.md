@@ -23,10 +23,12 @@
 	- [Icon](https://api.flutter.dev/flutter/widgets/Icon-class.html) - [Searchable icons list](https://www.materialpalette.com/icons)
 	- [Expanded Widget](https://github.com/alph-a07/Flutter-Notes/blob/main/README.md#expanded-widget)		
 	- [Padding](https://api.flutter.dev/flutter/widgets/Padding-class.html): To apply padding to a widget whose parent does not have a `padding property`
-	- 
+
 - [Adding custom fonts](https://github.com/alph-a07/Flutter-Notes/blob/main/README.md#adding-custom-fonts)
 
 - [Business Card UI](https://github.com/alph-a07/Flutter-Notes/blob/main/README.md#business-card-ui)
+
+- [Math Library](https://api.dart.dev/stable/2.16.2/dart-math/dart-math-library.html)
 
 # Introduction to Dart
 
@@ -388,6 +390,8 @@ class _MyAppState extends State<MyApp> {
   }
 }
 ```
+
+- **setState() method:** Any code that affects the state of an app should be written inside `setState()` method. It basically observes the code within and looks for instances in the build method which could be affected, marks them and again runs build method.
 
 **Summary:** Stateless widget is useful when the part of the user interface you are describing does not depend on anything other than the configuration information and the BuildContext whereas a Stateful widget is useful when the part of the user interface you are describing can change dynamically.
 
