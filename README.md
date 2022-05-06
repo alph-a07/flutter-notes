@@ -26,9 +26,11 @@
 
 - [Adding custom fonts](https://github.com/alph-a07/Flutter-Notes/blob/main/README.md#adding-custom-fonts)
 
-- [Business Card UI](https://github.com/alph-a07/Flutter-Notes/blob/main/README.md#business-card-ui)
+- [Business Card UI App](https://github.com/alph-a07/Flutter-Notes/blob/main/README.md#business-card-ui)
 
 - [Math Library](https://api.dart.dev/stable/2.16.2/dart-math/dart-math-library.html)
+
+- [Dicee App](https://github.com/alph-a07/Flutter-Notes/blob/main/README.md#dicee-app)
 
 # Introduction to Dart
 
@@ -633,4 +635,80 @@ flutter:
 <span>
 <img src="https://user-images.githubusercontent.com/83648189/166435333-5834ae75-d94a-4ef4-8f03-b2024e7aa0c3.jpg" width="270" height="600">
 <img src="https://user-images.githubusercontent.com/83648189/166436617-9b960f3c-7a1b-411d-968e-f1832a8939f8.png" width="600" height="600">
+</span>
+
+# Dicee App
+
+Dart Code:
+```dart
+import 'dart:math';
+
+import 'package:flutter/material.dart';
+
+void main() {
+  return runApp(
+    MaterialApp(
+      home: Scaffold(
+        backgroundColor: Colors.white,
+        appBar: AppBar(
+          title: Text(
+            'Dicee',
+            style: TextStyle(color: Colors.black),
+          ),
+          backgroundColor: Colors.white,
+        ),
+        body: DicePage(),
+      ),
+    ),
+  );
+}
+
+// The dice images will be changing, i.e let's use stateful widget
+class DicePage extends StatefulWidget {
+  const DicePage({Key? key}) : super(key: key);
+
+  @override
+  State<DicePage> createState() => _DicePageState();
+}
+
+class _DicePageState extends State<DicePage> {
+  int diceNumberLeft = 1;
+  int diceNumberRight = 1;
+
+  @override
+  Widget build(BuildContext context) {
+    return Center(
+      child: Row(
+        children: [
+          Expanded(
+              child: TextButton(
+                  onPressed: () {
+                    // the code which could modify the state of app should be written in setState() method
+                    setState(() {
+                      // Random().nextInt(MAX) - Range = [0,MAX]
+                      diceNumberLeft = Random().nextInt(5) + 1;
+                    });
+                  },
+                  child: Image.asset('images/dice$diceNumberLeft.png'))),
+          Expanded(
+              child: TextButton(
+                  onPressed: () {
+                    setState(() {
+                      diceNumberRight = Random().nextInt(5) + 1;
+                    });
+                  },
+                  child: Image.asset('images/dice$diceNumberRight.png'))),
+        ],
+      ),
+    );
+  }
+}
+```
+Images used: https://github.com/alph-a07/Flutter-Notes/raw/main/images.zip
+
+<span>
+	
+![Untitled design (1)](https://user-images.githubusercontent.com/83648189/167132465-8e04ffc0-7b95-4f83-a9c2-9396837b243a.gif)
+![Untitled design](https://user-images.githubusercontent.com/83648189/167132489-08a348c2-9376-4508-9532-33dc6690940c.gif)
+	
 </span>
