@@ -3,18 +3,23 @@
 - <a href="https://github.com/alph-a07/Flutter-Notes/blob/main/README.md#dart-functions">Dart functions</a>
 - <a href="https://github.com/alph-a07/Flutter-Notes/blob/main/README.md#oops-in-dart">OOPs in Dart</a>
 
-# Flutter, let's go🚀
+# Flutter - is all about widgets🚀
 - [App Icon](https://github.com/alph-a07/Flutter-Notes/blob/main/README.md#app-icon)
+
 - [State of the app](https://github.com/alph-a07/Flutter-Notes/blob/main/README.md#state-of-an-app)
+
 - [Hot Relaod](https://github.com/alph-a07/Flutter-Notes/blob/main/README.md#hot-relaod)
+
 - [Material Library](https://github.com/alph-a07/Flutter-Notes/blob/main/README.md#material-library)
+	- [MaterialApp Class](https://github.com/alph-a07/Flutter-Notes/blob/main/README.md#materialapp-class)
 	- [Scaffold Class](https://github.com/alph-a07/Flutter-Notes/blob/main/README.md#scaffold-class)
 	- [Image Class](https://github.com/alph-a07/Flutter-Notes/blob/main/README.md#image-class)
 	- [Card Class](https://api.flutter.dev/flutter/material/Card-class.html) - Rounded elevated look
 	- [ListTile Class](https://api.flutter.dev/flutter/material/ListTile-class.html) - An icon with a text
 	- [CircleAvatar Class](https://api.flutter.dev/flutter/material/CircleAvatar-class.html)
 	- [Divider Class](https://api.flutter.dev/flutter/material/Divider-class.html)
-	
+	- [ElevatedButton Class](https://github.com/alph-a07/Flutter-Notes/edit/main/README.md#elevatedbutton-class)
+		
 - [Widgets](https://github.com/alph-a07/Flutter-Notes/blob/main/README.md#widgets)
 	- [Container](https://api.flutter.dev/flutter/widgets/Container-class.html)
 	- [Column](https://api.flutter.dev/flutter/widgets/Column-class.html)
@@ -439,6 +444,11 @@ class MyApp extends StatelessWidget {
 - Reference: https://api.flutter.dev/flutter/material/material-library.html
 - Material is a design system created by Google to help teams build high-quality digital experiences for Android, iOS, Flutter, and the web.
 
+# MaterialApp Class
+
+- Reference: https://api.flutter.dev/flutter/material/MaterialApp-class.html
+- The MaterialApp class has so many optional constructors(like most of the classes/widgets in flutter) that's why [`Named Parameters`](https://github.com/alph-a07/Flutter-Notes/blob/main/README.md#optional-parameters) are heavily used in flutter development.
+
 ## Scaffold Class
 
 - Reference: https://api.flutter.dev/flutter/material/Scaffold-class.html
@@ -468,6 +478,13 @@ YAML(YAML Ain't Markup Language) is indentation(two spaces) based language.
 - A child of expanded class fills full space available in the screen.
 - **Flex:** The child will fill `Total free space/flex`.
 - Works like weights in `Linear layouts` in android development.
+
+### ElevatedButton Class
+
+- Reference: https://api.flutter.dev/flutter/material/ElevatedButton-class.html
+- `onPressed` - asks for a function body to be executed by flutter SDK
+	1. can take anonymous function 
+	2. or we can pass the **reference** to defined function(e.g. ✅onPressed: function; ❌onPressed: function();)
 
 # Adding custom fonts
 
