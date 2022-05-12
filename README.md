@@ -1,41 +1,41 @@
 # Basics of Dart
-- <a href="https://github.com/alph-a07/Flutter-Notes/blob/main/README.md#introduction-to-dart">Introduction to Dart</a>
-- <a href="https://github.com/alph-a07/Flutter-Notes/blob/main/README.md#dart-functions">Dart functions</a>
-- <a href="https://github.com/alph-a07/Flutter-Notes/blob/main/README.md#oops-in-dart">OOPs in Dart</a>
+- <a href="https://github.com/alph-a07/Flutter-Notes#introduction-to-dart">Introduction to Dart</a>
+- <a href="https://github.com/alph-a07/Flutter-Notes#dart-functions">Dart functions</a>
+- <a href="https://github.com/alph-a07/Flutter-Notes#oops-in-dart">OOPs in Dart</a>
 
 # Flutter - is all about widgets🚀
-- [App Icon](https://github.com/alph-a07/Flutter-Notes/blob/main/README.md#app-icon)
+- [App Icon](https://github.com/alph-a07/Flutter-Notes#app-icon)
 
-- [State of the app](https://github.com/alph-a07/Flutter-Notes/blob/main/README.md#state-of-an-app)
+- [State of the app](https://github.com/alph-a07/Flutter-Notes#state-of-an-app)
 
-- [Hot Relaod](https://github.com/alph-a07/Flutter-Notes/blob/main/README.md#hot-relaod)
+- [Hot Relaod](https://github.com/alph-a07/Flutter-Notes#hot-relaod)
 
-- [Material Library](https://github.com/alph-a07/Flutter-Notes/blob/main/README.md#material-library)
-	- [MaterialApp Class](https://github.com/alph-a07/Flutter-Notes/blob/main/README.md#materialapp-class)
-	- [Scaffold Class](https://github.com/alph-a07/Flutter-Notes/blob/main/README.md#scaffold-class)
-	- [Image Class](https://github.com/alph-a07/Flutter-Notes/blob/main/README.md#image-class)
+- [Material Library](https://github.com/alph-a07/Flutter-Notes#material-library)
+	- [MaterialApp Class](https://github.com/alph-a07/Flutter-Notes#materialapp-class)
+	- [Scaffold Class](https://github.com/alph-a07/Flutter-Notes#scaffold-class)
+	- [Image Class](https://github.com/alph-a07/Flutter-Notes#image-class)
 	- [Card Class](https://api.flutter.dev/flutter/material/Card-class.html) - Rounded elevated look
 	- [ListTile Class](https://api.flutter.dev/flutter/material/ListTile-class.html) - An icon with a text
 	- [CircleAvatar Class](https://api.flutter.dev/flutter/material/CircleAvatar-class.html)
 	- [Divider Class](https://api.flutter.dev/flutter/material/Divider-class.html)
 	- [ElevatedButton Class](https://github.com/alph-a07/Flutter-Notes/edit/main/README.md#elevatedbutton-class)
 		
-- [Widgets](https://github.com/alph-a07/Flutter-Notes/blob/main/README.md#widgets)
+- [Widgets](https://github.com/alph-a07/Flutter-Notes#widgets)
 	- [Container](https://api.flutter.dev/flutter/widgets/Container-class.html)
 	- [Column](https://api.flutter.dev/flutter/widgets/Column-class.html)
 	- [Row](https://api.flutter.dev/flutter/widgets/Row-class.html)
 	- [SizedBox](https://api.flutter.dev/flutter/widgets/SizedBox-class.html)
 	- [Icon](https://api.flutter.dev/flutter/widgets/Icon-class.html) - [Searchable icons list](https://www.materialpalette.com/icons)
-	- [Expanded Widget](https://github.com/alph-a07/Flutter-Notes/blob/main/README.md#expanded-widget)		
+	- [Expanded Widget](https://github.com/alph-a07/Flutter-Notes#expanded-widget)		
 	- [Padding](https://api.flutter.dev/flutter/widgets/Padding-class.html): To apply padding to a widget whose parent does not have a `padding property`
 
-- [Adding custom fonts](https://github.com/alph-a07/Flutter-Notes/blob/main/README.md#adding-custom-fonts)
+- [Adding custom fonts](https://github.com/alph-a07/Flutter-Notes#adding-custom-fonts)
 
-- [Business Card UI App](https://github.com/alph-a07/Flutter-Notes/blob/main/README.md#business-card-ui)
+- [Business Card UI App](https://github.com/alph-a07/Flutter-Notes#business-card-ui)
 
 - [Math Library](https://api.dart.dev/stable/2.16.2/dart-math/dart-math-library.html)
 
-- [Dicee App](https://github.com/alph-a07/Flutter-Notes/blob/main/README.md#dicee-app)
+- [Dicee App](https://github.com/alph-a07/Flutter-Notes#dicee-app)
 
 # Introduction to Dart
 
@@ -418,7 +418,7 @@ void main() {
 }
 ```
 - Hot relaod works by detecting the changes made to our code and by only building those changes again, that's why it takes much less time than full build.
-- In order to detect changes and build them out app must extend either a [`stateless`](https://github.com/alph-a07/Flutter-Notes/blob/main/README.md#stateless-widgets) or a [`stateful`](https://github.com/alph-a07/Flutter-Notes/blob/main/README.md#stateful-widgets) widget.
+- In order to detect changes and build them out app must extend either a [`stateless`](https://github.com/alph-a07/Flutter-Notes#stateless-widgets) or a [`stateful`](https://github.com/alph-a07/Flutter-Notes#stateful-widgets) widget.
 
 ```dart
 void main() {
@@ -447,7 +447,7 @@ class MyApp extends StatelessWidget {
 # MaterialApp Class
 
 - Reference: https://api.flutter.dev/flutter/material/MaterialApp-class.html
-- The MaterialApp class has so many optional constructors(like most of the classes/widgets in flutter) that's why [`Named Parameters`](https://github.com/alph-a07/Flutter-Notes/blob/main/README.md#optional-parameters) are heavily used in flutter development.
+- The MaterialApp class has so many optional constructors(like most of the classes/widgets in flutter) that's why [`Named Parameters`](https://github.com/alph-a07/Flutter-Notes#optional-parameters) are heavily used in flutter development.
 
 ## Scaffold Class
 
