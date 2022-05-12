@@ -1,5 +1,6 @@
 # Basics of Dart
 - <a href="https://github.com/alph-a07/Flutter-Notes#introduction-to-dart">Introduction to Dart</a>
+- [final vs const](https://github.com/alph-a07/Flutter-Notes#final-vs-const)
 - <a href="https://github.com/alph-a07/Flutter-Notes#dart-functions">Dart functions</a>
 - <a href="https://github.com/alph-a07/Flutter-Notes#oops-in-dart">OOPs in Dart</a>
 
@@ -44,6 +45,12 @@
 - C-Style Syntax
 - Multiple Runtime Environments(Transpiled to Javascript to run in the browser, Runs in the 'Dart VM' to execute from a commandline, Compiled to machine code to run on mobile devices)
 - _**Semicolons**_ are compulsary
+
+# final vs const
+
+- **final** means single-assignment: a final variable or field *must* have an initializer. Once assigned a value, a final variable's value cannot be changed. <mark>final modifies variables.</mark>
+
+- **const** has a meaning that's a bit more complex and subtle in Dart. const modifies *values*. You can use it when creating collections, like const [1, 2, 3], and when constructing objects (instead of new) like const Point(2, 3). Here, const means that the object's entire deep state can be determined entirely at compile time and that the object will be frozen and completely immutable.
 
 # Dart Functions
 
