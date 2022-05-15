@@ -5,6 +5,8 @@
 - <a href="https://github.com/alph-a07/Flutter-Notes#oops-in-dart">OOPs in Dart</a>
 
 # Flutter - is all about widgets🚀
+- [Null Safety](https://github.com/alph-a07/Flutter-Notes#null-safety)
+
 - [App Icon](https://github.com/alph-a07/Flutter-Notes#app-icon)
 
 - [State of the app](https://github.com/alph-a07/Flutter-Notes#state-of-an-app)
@@ -352,6 +354,14 @@ geek2.output1();
 **NOTE:**<br>
 - Child classes inherit all properties and methods except constructors of the parent class.
 - Like Java, Dart also doesn’t support multiple inheritance.
+
+# Null Safety
+- **Fully sound:** Dart’s null safety is sound, which enables compiler optimizations. If the type system determines that something isn’t null, then that thing can never be null. Once you migrate your whole project and its dependencies to null safety, you reap the full benefits of soundness — not only fewer bugs, but smaller binaries and faster execution.
+- Sound null safety is available after Dart 2.12 and Flutter 2.
+```yaml
+environment:
+  sdk: '>=2.12.0 <3.0.0'
+```
 
 # App Icon
 - Icon generator: https://appicon.co/ <br><br>
