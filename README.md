@@ -2,7 +2,21 @@
 - <a href="https://github.com/alph-a07/Flutter-Notes#introduction-to-dart">Introduction to Dart</a>
 - [final vs const](https://github.com/alph-a07/Flutter-Notes#final-vs-const)
 - <a href="https://github.com/alph-a07/Flutter-Notes#dart-functions">Dart functions</a>
+	- [Function definition](https://github.com/alph-a07/Flutter-Notes#function-definition)
+	- [Function call](https://github.com/alph-a07/Flutter-Notes#function-call)
+	- [Optional Parameters](https://github.com/alph-a07/Flutter-Notes#optional-parameters)
+	- [Lambda](https://github.com/alph-a07/Flutter-Notes#lambda)
+
 - <a href="https://github.com/alph-a07/Flutter-Notes#oops-in-dart">OOPs in Dart</a>
+	- [Instance methods](https://github.com/alph-a07/Flutter-Notes#instance-methods)
+	- [Class methods](https://github.com/alph-a07/Flutter-Notes#class-methods)
+	- [Abstract class](https://github.com/alph-a07/Flutter-Notes#abstract-class)
+	- [Super Keyword](https://github.com/alph-a07/Flutter-Notes#super-keyword)
+	- [This keyword](https://github.com/alph-a07/Flutter-Notes#this-keyword)
+	- [Inheritance](https://github.com/alph-a07/Flutter-Notes#inheritance)
+		- [Single Inheritance](https://github.com/alph-a07/Flutter-Notes#single-inheritance)
+		- [Multi-level Inheritance](https://github.com/alph-a07/Flutter-Notes#multi-level-inheritance)
+		- [Hierarchical Inheritance](https://github.com/alph-a07/Flutter-Notes#hierarchical-inheritance)
 
 # Flutter - is all about widgets🚀
 - [Null Safety](https://github.com/alph-a07/Flutter-Notes#null-safety)
@@ -10,6 +24,8 @@
 - [App Icon](https://github.com/alph-a07/Flutter-Notes#app-icon)
 
 - [State of the app](https://github.com/alph-a07/Flutter-Notes#state-of-an-app)
+	- [Stateless widgets](https://github.com/alph-a07/Flutter-Notes#stateless-widgets)
+	- [Stateful widgets](https://github.com/alph-a07/Flutter-Notes#stateful-widgets)
 
 - [Hot Relaod](https://github.com/alph-a07/Flutter-Notes#hot-relaod)
 
@@ -56,7 +72,7 @@
 
 # Dart Functions
 
-### Function definition
+## Function definition
 ```dart
 return_type function_name ( parameters ) {
    // Body of function
@@ -64,14 +80,14 @@ return_type function_name ( parameters ) {
 }
 ```
 
-### Function call
+## Function call
 ```dart
 function_name (argument_list);
 ```
 
 - Two functions _**can’t have the same function name**_ although they differ in parameters.
 
-### Optional Parameters
+## Optional Parameters
 | Parameter        | Description| 
 | ------------- |:-------------------:| 
 | Optional Positional Parameter      | To specify it use square (‘[ ]’) brackets.| 
@@ -130,7 +146,7 @@ g1 is 1<br>
 g2 is 12<br>
 </p>
 
-### Lambda
+## Lambda
 
 - They are also called arrow function. 
 - With lambda function you can _**return value for only one expression**_.
