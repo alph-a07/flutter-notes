@@ -162,7 +162,7 @@ void main()
 
 # OOPs in Dart
 
-### Instance methods
+## Instance methods
 
 - Unless the method is declared as static it is classified as an instance method in a class.
 - To call the method of this class you have to first create an object.
@@ -181,7 +181,7 @@ class_name object_name = new class_name();
 object_name.method_name();
 ```
 
-### Class methods
+## Class methods
 
 - All the methods declared with static keyword are termed as class method. 
 - They can’t access non-static variables and can’t invoke non-static methods of the class. 
@@ -198,7 +198,7 @@ static return_type method_name() {
 class_name.method_name();
 ```
 
-### Abstract class
+## Abstract class
 
 - A class containing an abstract method must be declared abstract whereas the class declared abstract may or may not have abstract methods i.e. it can have either abstract or concrete methods.
 - A class can be declared abstract by using abstract keyword only.
@@ -237,18 +237,18 @@ main()
 }
 ```
 
-### Super Keyword
+## Super Keyword
 - Used to call imediate parent class.
 
-### This keyword
+## This keyword
 - Used to reference the current class itself.
 
-### Inheritance
+## Inheritance
 
 - Parent Class: It is the class whose properties are inherited by the child class. It is also known as a _**base class**_ or _**superclass**_.
 - Child Class: It is the class that inherits the properties of the other classes. It is also known as a _**deprived class**_ or _**subclass**_.
 
-#### Single Inheritance
+### Single Inheritance
 ```dart
 // Dart program to show the single inheritance
 
@@ -276,7 +276,7 @@ geek.output();
 }
 ```
 
-#### Multi-level Inheritance
+### Multi-level Inheritance
 
 ```dart
 // Dart program for multilevel interitance
@@ -322,7 +322,7 @@ geek.output2();
 }
 ```
 
-#### Hierarchical Inheritance
+### Hierarchical Inheritance
 
 ```dart
 // Dart program for Hierarchical inheritance
@@ -393,7 +393,7 @@ environment:
 
 - The State is the information(buttons, text fonts, icons, animations, etc) that can be read synchronously when the widget is built and might change during the lifetime of the widget.
 
-### Stateless widgets
+## Stateless widgets
 - The widgets whose state can not be altered once they are built are called stateless widgets.
 - Ex: Text, RaisedButton, IconButtons.
 
@@ -409,7 +409,7 @@ class MyApp extends StatelessWidget {
 	}
 }
 ```
-### Stateful widgets
+## Stateful widgets
 - The widgets whose state can be altered once they are built are called stateful Widgets.
 - Ex: CheckBox, RadioButton, Form, TextField.
 
@@ -477,7 +477,7 @@ class MyApp extends StatelessWidget {
 - Reference: https://api.flutter.dev/flutter/material/material-library.html
 - Material is a design system created by Google to help teams build high-quality digital experiences for Android, iOS, Flutter, and the web.
 
-# MaterialApp Class
+## MaterialApp Class
 
 - Reference: https://api.flutter.dev/flutter/material/MaterialApp-class.html
 - The MaterialApp class has so many optional constructors(like most of the classes/widgets in flutter) that's why [`Named Parameters`](https://github.com/alph-a07/Flutter-Notes#optional-parameters) are heavily used in flutter development.
